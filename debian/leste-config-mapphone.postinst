@@ -10,10 +10,12 @@ echo "Updating udev hwdb"
 udevadm hwdb --update
 udevadm trigger
 
-# Let udevadm settle
-sleep 3
-# Refresh touchscreen rotation which gets borked on udevadm trigger.
-/usr/bin/hildon-desktop-rotate-touchscreen.sh 2>/dev/null || true
+if egrep -q '^none /sys/kernel/debug debugfs defaults 0 0' /etc/fstab; then
+    # No need to change anything
+    true;
+else
+    echo "none /sys/kernel/debug debugfs defaults 0 0" >> /etc/fstab
+fi
 
 #DEBHELPER#
 

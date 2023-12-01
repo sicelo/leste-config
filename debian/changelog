@@ -1,3 +1,390 @@
+leste-config (1.99-1) unstable; urgency=medium
+
+  * pinephone: lower earpiece volume
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 10 Nov 2023 20:40:25 +0100
+
+leste-config (1.98-1) unstable; urgency=medium
+
+  * n900: more UCM improvements - add fmtx, fix some earpiece bugs
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Wed, 30 Aug 2023 12:59:04 +0200
+
+leste-config (1.97-1) unstable; urgency=medium
+
+  * n900: UCM improvements - earpiece works, thanks Sicelo and Arno II
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 26 Aug 2023 22:34:44 +0200
+
+leste-config (1.96-1) unstable; urgency=medium
+
+  * n900: more UCM improvements. easier config, jack plug/unplug works, no
+    more noise in headset/headphone
+  * earpiece doesn't work yet
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 07 Jul 2023 12:32:19 +0200
+
+leste-config (1.95-1) unstable; urgency=medium
+
+  * n900: modify UCM for volume control again
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Mon, 12 Jun 2023 23:25:24 +0200
+
+leste-config (1.94-1) unstable; urgency=medium
+
+  * n900: modify UCM for volume control
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Mon, 12 Jun 2023 08:52:06 +0200
+
+leste-config (1.93-1) unstable; urgency=medium
+
+  * n900: correct UCM path
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 09 Jun 2023 22:57:25 +0200
+
+leste-config (1.92-1) unstable; urgency=medium
+
+  * n900: add UCM
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 09 Jun 2023 21:55:02 +0200
+
+leste-config (1.91-1) unstable; urgency=medium
+
+  * n900: better perms for cmt_speech
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 21 Apr 2023 10:37:12 +0200
+
+leste-config (1.90-1) unstable; urgency=medium
+
+  * n900: omap.conf: do not do manual display update
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Tue, 18 Apr 2023 17:17:32 +0300
+
+leste-config (1.89-1) unstable; urgency=medium
+
+  * n900: add swap and debugfs
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 02 Apr 2023 17:41:28 +0200
+
+leste-config (1.88-1) unstable; urgency=medium
+
+  * common: remove /etc/profile.d/xdg-runtime.sh
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Wed, 29 Mar 2023 18:13:38 +0300
+
+leste-config (1.87-1) unstable; urgency=medium
+
+  * n900: load nokia-modem on boot
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 25 Mar 2023 23:11:40 +0100
+
+leste-config (1.86-1) unstable; urgency=medium
+
+  * n900: reduce power usage significantly
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 18 Mar 2023 01:30:54 +0100
+
+leste-config (1.85-1) unstable; urgency=medium
+
+  * n900: fix hdq high idle power usage
+  * pinephone: fix conflicting shortcuts with the volume keys
+  * elogind: do not handle any key
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Thu, 16 Mar 2023 20:34:32 +0200
+
+leste-config (1.84-1) unstable; urgency=medium
+
+  * Fixup elogind config path
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 05 Mar 2023 01:43:16 +0100
+
+leste-config (1.83-1) unstable; urgency=medium
+
+  * Add logind.conf.d/maemo-leste.conf to disable power button turning off the device
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 04 Mar 2023 13:38:04 +0100
+
+leste-config (1.82-1) unstable; urgency=medium
+
+  * ucm2 fixes for mapphones with pulseaudio 14+ for headset plug events
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 08 Jan 2023 19:17:09 +0100
+
+leste-config (1.81-1) unstable; urgency=medium
+
+  * ucm2 fixes for mapphones with pulseaudio 14+
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 22 Dec 2022 01:21:51 +0100
+
+leste-config (1.80-2) unstable; urgency=medium
+
+  * Run gen-displace to fix conflicts
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 08 Dec 2022 13:08:51 +0100
+
+leste-config (1.80-1) unstable; urgency=medium
+
+  * Blacklist n900 modem to avoid crashes with Linux 6.1
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Wed, 07 Dec 2022 15:11:35 +0100
+
+leste-config (1.79-1) unstable; urgency=medium
+
+  * Attempt experimental razr support
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 04 Dec 2022 15:44:04 +0100
+
+leste-config (1.78-1) unstable; urgency=medium
+
+  * Attempt to nerf wakeups by disabling proactive memory compaction
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Mon, 28 Nov 2022 15:11:27 +0100
+
+leste-config (1.77-1) unstable; urgency=medium
+
+  * And revert again, pulseaudio still causes a lot of wakeups, calling
+    ppoll() all the time
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Wed, 23 Nov 2022 16:54:41 +0100
+
+leste-config (1.76-1) unstable; urgency=medium
+
+  * Re-add echo cancellation based on filter.want and media roles
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Wed, 23 Nov 2022 16:41:42 +0100
+
+leste-config (1.75-1) unstable; urgency=medium
+
+  * add missing new line
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Wed, 02 Nov 2022 07:17:53 +0200
+
+leste-config (1.74-1) unstable; urgency=medium
+
+  * mapphone: re-enable omap_hdq
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Wed, 02 Nov 2022 06:50:17 +0200
+
+leste-config (1.73-1) unstable; urgency=medium
+
+  * himrc: use pixmap engine and more precise borders for shift and backspace
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Tue, 13 Sep 2022 10:41:56 +0300
+
+leste-config (1.72-1) unstable; urgency=medium
+
+  * himrc: use sapwood engine, again
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Mon, 12 Sep 2022 20:20:33 +0300
+
+leste-config (1.71-1) unstable; urgency=medium
+
+  * Revert previous pulse echo cancel
+  * Add better UCM for the Droid 4 for working call audio
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 30 Jul 2022 23:45:25 +0200
+
+leste-config (1.70-1) unstable; urgency=medium
+
+  * Add pulseaudio-based noise cancelling sink/source, tested with SIP calls
+    to avoid modems messing wiht the audio.
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 29 Jul 2022 22:46:10 +0200
+
+leste-config (1.69-1) unstable; urgency=medium
+
+  * Fix path in rsyslog.d maemo daemons
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 25 Feb 2022 17:01:17 +0100
+
+leste-config (1.68-1) unstable; urgency=medium
+
+  * Add pulseaudio setup (default sink, switch on port)
+  * Add libsdl environment variables
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 13 Feb 2022 09:41:13 +0100
+
+leste-config (1.67-1) unstable; urgency=medium
+
+  * Add debugfs for mapphones
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 05 Feb 2022 19:54:13 +0100
+
+leste-config (1.66-1) unstable; urgency=medium
+
+  * Add maemo specific rsyslog.d rules
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 05 Feb 2022 17:25:22 +0100
+
+leste-config (1.65-1) unstable; urgency=medium
+
+  * Fix PinePhone audio, rename ucm2 dir
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 05 Feb 2022 16:41:30 +0100
+
+leste-config (1.64-1) unstable; urgency=medium
+
+  * More robust version of policy-rc.d
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 03 Feb 2022 17:19:38 +0100
+
+leste-config (1.63-1) unstable; urgency=medium
+
+  * Prevent certain services from restarting during upgrade
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 03 Feb 2022 16:53:35 +0100
+
+leste-config (1.62-1) unstable; urgency=medium
+
+  * Remove directfb files for n900 / mapphones
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Wed, 02 Feb 2022 23:59:56 +0100
+
+leste-config (1.61-1) unstable; urgency=medium
+
+  * Add 99-omap.conf for n900
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Wed, 02 Feb 2022 14:30:38 +0100
+
+leste-config (1.60-1) unstable; urgency=medium
+
+  * Add /etc/no_lg_reboots
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 21 Jan 2022 15:21:44 +0100
+
+leste-config (1.59-1) unstable; urgency=medium
+
+  * Add ts buttons light to mce
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 09 Jan 2022 18:18:23 +0100
+
+leste-config (1.58-1) unstable; urgency=medium
+
+  * Enable omap DDX "ManualUpdate" option for mapphones
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Sun, 02 Jan 2022 10:24:11 +0200
+
+leste-config (1.57-1) unstable; urgency=medium
+
+  * Fix Droid 3 orientation
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 30 Dec 2021 14:02:06 +0100
+
+leste-config (1.56-1) unstable; urgency=medium
+
+  * Fix PinePhone orientation
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Tue, 21 Dec 2021 12:29:28 +0100
+
+leste-config (1.55-1) unstable; urgency=medium
+
+  * Add droid3
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Mon, 29 Nov 2021 12:33:49 +0100
+
+leste-config (1.54-1) unstable; urgency=medium
+
+  * Add quirks-mapphone to mce config
+  * Add battery guard config for mapphone and n900
+  * Add directfb config for chargemode on n900
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Fri, 22 Oct 2021 10:49:02 +0200
+
+leste-config (1.53-1) unstable; urgency=medium
+
+  * Raise in-call volume for mapphones
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Tue, 07 Sep 2021 12:16:00 +0200
+
+leste-config (1.52-1) unstable; urgency=medium
+
+  * remove all calls to hildon-desktop-rotate-touchscreen.sh
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Fri, 03 Sep 2021 10:43:23 +0300
+
+leste-config (1.51-1) unstable; urgency=medium
+
+  * pinephone: Sort out some more files.
+  * pinephone: Update ucm2 files.
+
+ -- Ivan J. <parazyd@dyne.org>  Wed, 14 Jul 2021 11:03:52 +0200
+
+leste-config (1.50-1) unstable; urgency=medium
+
+  * Update debian/changelog.
+
+ -- Ivan J. <parazyd@dyne.org>  Fri, 25 Jun 2021 12:14:16 +0200
+
+leste-config (1.49-1) unstable; urgency=medium
+
+  * pinephone: Add conf.d file for gpsd.
+
+ -- Ivan J. <parazyd@dyne.org>  Fri, 25 Jun 2021 11:56:37 +0200
+
+leste-config (1.48-1) unstable; urgency=medium
+
+  * Update displace files.
+
+ -- Ivan J. <parazyd@dyne.org>  Fri, 25 Jun 2021 11:27:12 +0200
+
+leste-config (1.47-2) unstable; urgency=medium
+
+  * pinephone: Remove leftover /mce
+
+ -- Ivan J. <parazyd@dyne.org>  Fri, 25 Jun 2021 11:01:22 +0200
+
+leste-config (1.47-1) unstable; urgency=medium
+
+  * pinephone: Fix mce config path.
+
+ -- Ivan J. <parazyd@dyne.org>  Fri, 25 Jun 2021 10:55:20 +0200
+
+leste-config (1.46-1) unstable; urgency=medium
+
+  * Mapphones: switch away from mono mode on exiting internal speaker hifi output
+
+ -- Ivan J. <parazyd@dyne.org>  Thu, 17 Jun 2021 12:16:11 +0200
+
+leste-config (1.45-1) unstable; urgency=medium
+
+  * resore ctrl-backspace on n900
+  * pinephone: Add udev rule for flashlight.
+  * pinephone: sysrq.conf missing newline.
+  * pinephone: Update UCM2 files for headset microphone.
+
+ -- Ivan J. <parazyd@dyne.org>  Wed, 05 May 2021 07:34:44 +0200
+
+leste-config (1.44-1) unstable; urgency=medium
+
+  * n900: Give gps-nokia-n900 a bit of time to settle.
+
+ -- Ivan J. <parazyd@dyne.org>  Tue, 04 May 2021 09:59:14 +0200
+
+leste-config (1.43-1) unstable; urgency=medium
+
+  * having input devices that dont exist in directfbrc breaks
+    it sadly so lets remove non essentials for the benefit of bionic
+
+ -- Ivan J. <parazyd@dyne.org>  Tue, 04 May 2021 09:48:28 +0200
+
+leste-config (1.42-1) unstable; urgency=medium
+
+  * n900: Add gpsd conf.d file.
+
+ -- Ivan J. <parazyd@dyne.org>  Tue, 04 May 2021 03:01:16 +0200
+
+leste-config (1.41-1) unstable; urgency=medium
+
+  * mapphones: add directfb configuration
+  * Update mapphone displace file.
+  * pinetab: force evdev driver for touchscreen
+  * n900: force evdev for touchscreen
+  * Pinephone: drop 40-input.conf.leste
+  * mapphones: switch from xinput-evdev to xinput-libinput and configure libinput for all display servers.
+  * Set MAC address only when really necessary
+
+ -- Ivan J. <parazyd@dyne.org>  Sat, 01 May 2021 17:03:42 +0200
+
 leste-config (1.40-1) unstable; urgency=medium
 
   * Add leste-config-pocophone-f1 package
